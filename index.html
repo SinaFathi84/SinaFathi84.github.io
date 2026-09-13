@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sina Fathi is an Electrical Engineering student at Sharif University of Technology working on machine learning, biomedical AI, and signal processing.">
+  <meta name="theme-color" content="#f6f7f2">
+  <meta property="og:title" content="Sina Fathi — Research & Projects">
+  <meta property="og:description" content="Electrical Engineering student and machine learning researcher at Sharif University of Technology.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sinafathi84.github.io/">
+  <meta property="og:image" content="https://sinafathi84.github.io/assets/sina-fathi.png">
+  <title>Sina Fathi — Research & Projects</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script>
+    document.documentElement.classList.replace('no-js', 'js');
+    try {
+      const savedTheme = localStorage.getItem('sina-theme');
+      document.documentElement.dataset.theme = savedTheme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    } catch (_) {}
+  </script>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="Sina Fathi, home">SF<span>.</span></a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-button" type="button" data-theme-toggle aria-label="Switch to dark theme">
+          <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.7A8.5 8.5 0 0 1 8.3 3.8 8.5 8.5 0 1 0 20.2 15.7Z"/></svg>
+        </button>
+        <a class="button button-small" href="assets/Sina_Fathi_CV.pdf" target="_blank" rel="noopener">CV <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero shell" id="top">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Electrical Engineering · Machine Learning</p>
+        <h1>Sina Fathi</h1>
+        <p class="hero-lede">I build efficient and interpretable learning systems, with interests spanning biomedical AI, computer vision, and signal processing.</p>
+        <div class="hero-actions">
+          <a class="button" href="#research">Explore my work</a>
+          <a class="text-link" href="mailto:sina.fth7@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="social-row" aria-label="Profile links">
+          <a href="https://github.com/SinaFathi84" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="https://www.linkedin.com/in/sina-fathi7/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=Z_t5DjwAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar">Scholar</a>
+        </div>
+      </div>
+      <figure class="portrait-wrap reveal">
+        <div class="portrait-accent" aria-hidden="true"></div>
+        <img class="portrait" src="assets/sina-fathi.png" alt="Portrait of Sina Fathi" width="640" height="640">
+        <figcaption>
+          <span class="status-dot" aria-hidden="true"></span>
+          Sharif University of Technology
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="section shell" id="about">
+      <div class="section-label reveal"><span>01</span> About</div>
+      <div class="about-grid">
+        <h2 class="display-copy reveal">Curious about the ideas that make intelligent systems more capable—and more understandable.</h2>
+        <div class="prose reveal">
+          <p>I am a B.Sc. student in Electrical Engineering at <a href="https://en.sharif.edu/" target="_blank" rel="noopener">Sharif University of Technology</a>, with a GPA of 19.88/20 and a rank of 3rd among approximately 200 students.</p>
+          <p>My current work explores explainable biomedical vision-language models and computationally efficient attention under local scale variations. I enjoy connecting rigorous mathematical ideas with systems that solve meaningful real-world problems.</p>
+          <div class="stats" aria-label="Academic highlights">
+            <div><strong>19.88</strong><span>GPA / 20</span></div>
+            <div><strong>3rd</strong><span>of ~200 students</span></div>
+            <div><strong>11</strong><span>TA appointments</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="research">
+      <div class="section-label reveal"><span>02</span> Research</div>
+      <div class="section-heading reveal">
+        <h2>Selected research</h2>
+        <p>Work at the intersection of machine learning, medicine, and efficient computation.</p>
+      </div>
+
+      <article class="featured-work reveal">
+        <div class="work-number">01</div>
+        <div class="work-content">
+          <div class="tags"><span>Biomedical AI</span><span>Vision–Language Models</span><span>Explainability</span></div>
+          <h3>ConceptCLIP-V2</h3>
+          <p class="work-subtitle">Modality- and Concept-Specialized Explainable Biomedical Vision-Language Pre-Training</p>
+          <p>An explainable biomedical vision-language pre-training framework developed at SMARTX-Lab, HKUST. Manuscript in preparation; anticipated second author.</p>
+          <a class="text-link" href="https://drive.google.com/drive/folders/1J8y7fVeKLqhM9yoLz6kLlRRhXflhty4U?usp=sharing" target="_blank" rel="noopener">View presentation <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+
+      <article class="featured-work reveal">
+        <div class="work-number">02</div>
+        <div class="work-content">
+          <div class="tags"><span>Efficient ML</span><span>Attention</span><span>Scale Robustness</span></div>
+          <h3>Efficient Attention under Local Scale Variations</h3>
+          <p class="work-subtitle">Research assistant · Sharif University of Technology</p>
+          <p>Developing a computationally efficient attention mechanism that preserves recognition performance when individual objects within an image are independently resized.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section shell" id="projects">
+      <div class="section-label reveal"><span>03</span> Projects</div>
+      <div class="section-heading reveal">
+        <h2>Selected projects</h2>
+        <p>A selection across deep learning, information theory, privacy, and signal processing.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <span class="project-index">01</span>
+          <div class="project-icon" aria-hidden="true">ML</div>
+          <h3>Deep Learning Systems</h3>
+          <p>U-Net segmentation, MobileFaceNet verification, PINNs, variational autoencoders, custom dropout, and transfer learning in PyTorch.</p>
+          <div class="tags"><span>PyTorch</span><span>Computer Vision</span><span>PINNs</span></div>
+        </article>
+        <article class="project-card reveal">
+          <span class="project-index">02</span>
+          <div class="project-icon" aria-hidden="true">OT</div>
+          <h3>Generative Communication</h3>
+          <p>Channel-aware optimal transport, hybrid coding, and conditional flow matching that uses channel noise as constructive entropy.</p>
+          <div class="tags"><span>Optimal Transport</span><span>Flow Matching</span></div>
+        </article>
+        <article class="project-card reveal">
+          <span class="project-index">03</span>
+          <div class="project-icon" aria-hidden="true">PP</div>
+          <h3>Privacy-Preserving Learning</h3>
+          <p>A secure two-party RBM training protocol using ElGamal encryption for vertically partitioned data.</p>
+          <div class="tags"><span>RBM</span><span>Cryptography</span><span>MNIST</span></div>
+        </article>
+        <article class="project-card reveal">
+          <span class="project-index">04</span>
+          <div class="project-icon" aria-hidden="true">SP</div>
+          <h3>Audio & Signal Processing</h3>
+          <p>Phase-vocoder audio time-scaling and speaker identification using MFCC features, vector quantization, and LBG clustering.</p>
+          <div class="tags"><span>MATLAB</span><span>MFCC</span><span>Audio</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section shell" id="experience">
+      <div class="section-label reveal"><span>04</span> Experience</div>
+      <div class="experience-grid">
+        <div class="section-heading reveal">
+          <h2>Experience</h2>
+          <p>Research, teaching, and academic service.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-date">Summer 2026</div>
+            <h3>Research Intern</h3>
+            <p class="timeline-place"><a href="https://hkustsmartlab.github.io/" target="_blank" rel="noopener">SMARTX-Lab, HKUST</a> · Prof. Hao Chen</p>
+            <p>Contributed to ConceptCLIP-V2 and developed an agentic AI system for medical education.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2026 — Present</div>
+            <h3>Research Assistant</h3>
+            <p class="timeline-place">Sharif University of Technology · Dr. Mohammad Mahdi Mojahedian</p>
+            <p>Researching efficient attention architectures robust to local changes in object scale.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2022 — Present</div>
+            <h3>Physics Olympiad Instructor</h3>
+            <p class="timeline-place">Iran’s National Physics Team and leading schools</p>
+            <p>Teaching advanced physics and preparing students for international-level competition.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2024 — 2025</div>
+            <h3>Teaching Assistant</h3>
+            <p class="timeline-place">Sharif University of Technology</p>
+            <p>Completed 11 appointments across machine learning, signals, mathematics, communications, electronics, and probability.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">Summer 2025</div>
+            <h3>Integrated Circuit Design Lab Intern</h3>
+            <p class="timeline-place">Sharif University of Technology · Dr. Ali Medi</p>
+            <p>Studied analog-to-digital converter architectures and integrated-circuit design methodologies.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="honors">
+      <div class="section-label reveal"><span>05</span> Honors</div>
+      <div class="honors-grid">
+        <div class="section-heading reveal">
+          <h2>Honors & service</h2>
+        </div>
+        <div class="honor-list reveal">
+          <div class="honor-row"><span>2023</span><strong>Silver Medal, International Physics Olympiad</strong><em>Tokyo, Japan</em></div>
+          <div class="honor-row"><span>2022</span><strong>Gold Medal, Iranian National Physics Olympiad</strong><em>Ranked 1st among the 10 gold medalists</em></div>
+          <div class="honor-row"><span>2024</span><strong>Experimental Committee, 54th IPhO</strong><em>Exam design and grading</em></div>
+          <div class="honor-row"><span>—</span><strong>Iran’s National Elites Foundation</strong><em>Member</em></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="shell contact-inner reveal">
+        <p class="eyebrow">Let’s connect</p>
+        <h2>Interested in ideas that bridge rigorous theory and meaningful applications.</h2>
+        <p>I am always happy to discuss research, collaborations, and new directions in machine learning.</p>
+        <a class="button button-light" href="mailto:sina.fth7@gmail.com">sina.fth7@gmail.com <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <p>© <span data-year></span> Sina Fathi</p>
+      <div>
+        <a href="https://github.com/SinaFathi84" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/sina-fathi7/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
