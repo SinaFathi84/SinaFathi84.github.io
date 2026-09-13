@@ -243,6 +243,24 @@ h1 {
   font-weight: 650;
 }
 
+.research-interests {
+  display: grid;
+  grid-template-columns: minmax(180px, .45fr) minmax(0, 1.55fr);
+  align-items: baseline;
+  gap: clamp(32px, 7vw, 110px);
+}
+
+.research-interests .section-label { margin-bottom: 0; }
+
+.interest-title {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.2rem, 8vw, 7rem);
+  font-weight: 500;
+  letter-spacing: -.055em;
+  line-height: .95;
+}
+
 .status-dot { width: 8px; height: 8px; border-radius: 50%; background: #26a870; box-shadow: 0 0 0 4px rgba(38,168,112,.12); }
 
 .section { padding: 112px 0; border-top: 1px solid var(--line); }
@@ -339,7 +357,7 @@ h1 {
   .hero { min-height: auto; grid-template-columns: 1fr; padding-top: 130px; }
   .hero-copy { order: 2; }
   .portrait-wrap { order: 1; width: min(100%, 430px); margin-inline: auto; }
-  .about-grid, .experience-grid, .honors-grid { grid-template-columns: 1fr; gap: 45px; }
+  .about-grid, .experience-grid, .honors-grid, .research-interests { grid-template-columns: 1fr; gap: 45px; }
   .section-heading { grid-template-columns: 1fr; gap: 18px; }
   .project-grid { grid-template-columns: 1fr; }
   .project-card { min-height: 300px; }
