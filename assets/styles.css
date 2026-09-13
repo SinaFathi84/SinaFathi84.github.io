@@ -111,23 +111,49 @@ button { color: inherit; font: inherit; }
   justify-content: center;
 }
 
-.brand-mark { width: 54px; height: auto; overflow: visible; }
-.brand-stroke {
+.brand-mark { width: 58px; height: auto; overflow: visible; }
+.brand-network {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3;
+  stroke-linecap: round;
+  opacity: .36;
+  transition: opacity .2s ease, stroke .2s ease;
+}
+.brand-letter {
   fill: none;
   stroke: var(--text);
-  stroke-width: 3.15;
+  stroke-width: 8;
   stroke-linecap: round;
   stroke-linejoin: round;
   transition: stroke .2s ease;
 }
-.brand-dot { fill: var(--accent); transition: fill .2s ease; }
-.brand-node { fill: var(--surface); stroke: var(--accent); stroke-width: 2.2; transition: fill .2s ease, stroke .2s ease; }
-.brand:hover .brand-stroke,
-.brand:focus-visible .brand-stroke { stroke: var(--accent-dark); }
-.brand:hover .brand-dot,
-.brand:focus-visible .brand-dot { fill: var(--text); }
-.brand:hover .brand-node,
-.brand:focus-visible .brand-node { fill: var(--accent); stroke: var(--accent); }
+.brand-node-input {
+  fill: var(--surface);
+  stroke: var(--accent);
+  stroke-width: 4;
+  transition: fill .2s ease, stroke .2s ease;
+}
+.brand-node-hidden {
+  fill: var(--accent-soft);
+  stroke: var(--accent);
+  stroke-width: 4;
+  transition: fill .2s ease, stroke .2s ease;
+}
+.brand-node-output {
+  fill: var(--accent);
+  stroke: var(--surface);
+  stroke-width: 3;
+  transition: fill .2s ease, stroke .2s ease;
+}
+.brand:hover .brand-letter,
+.brand:focus-visible .brand-letter { stroke: var(--accent-dark); }
+.brand:hover .brand-network,
+.brand:focus-visible .brand-network { opacity: .58; }
+.brand:hover .brand-node-input,
+.brand:focus-visible .brand-node-input { fill: var(--accent-soft); }
+.brand:hover .brand-node-output,
+.brand:focus-visible .brand-node-output { fill: var(--text); }
 
 .desktop-nav { display: flex; align-items: center; gap: 30px; margin-left: auto; }
 .desktop-nav a { color: var(--muted); font-size: .92rem; font-weight: 550; transition: color .2s ease; }
