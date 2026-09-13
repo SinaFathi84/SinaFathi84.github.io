@@ -11,7 +11,7 @@
   <meta property="og:url" content="https://sinafathi84.github.io/">
   <meta property="og:image" content="https://sinafathi84.github.io/assets/sina-fathi-v4.jpg">
   <title>Sina Fathi — Research & Projects</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml">
   <script>
     document.documentElement.classList.replace('no-js', 'js');
     try {
@@ -19,7 +19,7 @@
       document.documentElement.dataset.theme = savedTheme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     } catch (_) {}
   </script>
-  <link rel="stylesheet" href="assets/styles.css?v=20260913-4">
+  <link rel="stylesheet" href="assets/styles.css?v=20260913-5">
   <script src="assets/script.js" defer></script>
 </head>
 <body>
@@ -27,7 +27,13 @@
 
   <header class="site-header" data-header>
     <div class="shell nav-wrap">
-      <a class="brand" href="#top" aria-label="Sina Fathi, home">SF<span>.</span></a>
+      <a class="brand" href="#top" aria-label="Sina Fathi, home">
+        <svg class="brand-mark" viewBox="0 0 60 40" role="img" aria-hidden="true">
+          <path class="brand-stroke" d="M25.5 8.2C23.2 6.7 20.3 6 17.2 6C11.7 6 7.8 8.7 7.8 12.7C7.8 16.9 11.2 18.1 17.4 19.7C23.8 21.3 27 23.3 27 27.7C27 32.2 22.9 34.7 17 34.7C12.5 34.7 8.5 33.4 5.5 30.8"/>
+          <path class="brand-stroke" d="M34 34.5V6H53M34 19.7H49"/>
+          <circle class="brand-dot" cx="53.5" cy="34" r="2.7"/>
+        </svg>
+      </a>
       <nav class="desktop-nav" aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#education">Education</a>

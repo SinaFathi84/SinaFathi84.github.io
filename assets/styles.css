@@ -104,12 +104,27 @@ button { color: inherit; font: inherit; }
 }
 
 .brand {
-  font-weight: 850;
-  font-size: 1.35rem;
-  letter-spacing: -.05em;
+  width: 58px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.brand span { color: var(--accent); }
+.brand-mark { width: 54px; height: auto; overflow: visible; }
+.brand-stroke {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 3.15;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke .2s ease;
+}
+.brand-dot { fill: var(--accent); transition: fill .2s ease; }
+.brand:hover .brand-stroke,
+.brand:focus-visible .brand-stroke { stroke: var(--accent-dark); }
+.brand:hover .brand-dot,
+.brand:focus-visible .brand-dot { fill: var(--text); }
 
 .desktop-nav { display: flex; align-items: center; gap: 30px; margin-left: auto; }
 .desktop-nav a { color: var(--muted); font-size: .92rem; font-weight: 550; transition: color .2s ease; }
@@ -524,7 +539,8 @@ h1 {
   :root { --shell: calc(100% - 28px); --radius-lg: 20px; }
   html { scroll-padding-top: 76px; }
   .nav-wrap { min-height: 66px; gap: 12px; }
-  .brand { font-size: 1.15rem; }
+  .brand { width: 52px; height: 38px; }
+  .brand-mark { width: 49px; }
   .theme-button { width: 38px; height: 38px; }
   .button-small { min-height: 38px; padding-inline: 14px; }
   .hero { padding-top: 100px; padding-bottom: 65px; gap: 48px; }
