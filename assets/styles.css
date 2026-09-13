@@ -283,6 +283,30 @@ h1 {
 .stats strong { display: block; color: var(--text); font-family: Georgia, "Times New Roman", serif; font-size: 1.8rem; font-weight: 500; line-height: 1; }
 .stats span { display: block; margin-top: 9px; color: var(--muted); font-size: .72rem; line-height: 1.35; }
 
+.education-entry {
+  padding: 34px 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 40px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.education-entry h2 {
+  margin-bottom: 8px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 500;
+  letter-spacing: -.04em;
+  line-height: 1.08;
+}
+
+.education-entry p { margin: 0; color: var(--muted); }
+.education-meta { display: grid; justify-items: end; gap: 7px; white-space: nowrap; }
+.education-meta span { color: var(--muted); font-size: .78rem; font-weight: 750; letter-spacing: .04em; }
+.education-meta strong { color: var(--accent-dark); font-family: Georgia, "Times New Roman", serif; font-size: 1.3rem; font-weight: 500; }
+
 .section-heading { margin-bottom: 48px; display: grid; grid-template-columns: 1fr .7fr; align-items: end; gap: 45px; }
 .section-heading h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.5rem, 5vw, 4.4rem); font-weight: 500; letter-spacing: -.05em; line-height: 1; }
 .section-heading p { margin: 0; color: var(--muted); }
@@ -361,6 +385,8 @@ h1 {
   .hero-copy { order: 2; }
   .portrait-wrap { order: 1; width: min(100%, 430px); margin-inline: auto; }
   .about-grid, .experience-grid, .honors-grid, .research-interests { grid-template-columns: 1fr; gap: 45px; }
+  .education-entry { grid-template-columns: 1fr; align-items: start; gap: 24px; }
+  .education-meta { justify-items: start; }
   .section-heading { grid-template-columns: 1fr; gap: 18px; }
   .project-grid { grid-template-columns: 1fr; }
   .project-card { min-height: 300px; }
