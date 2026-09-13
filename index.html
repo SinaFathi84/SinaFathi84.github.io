@@ -19,7 +19,7 @@
       document.documentElement.dataset.theme = savedTheme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     } catch (_) {}
   </script>
-  <link rel="stylesheet" href="assets/styles.css?v=20260913-2">
+  <link rel="stylesheet" href="assets/styles.css?v=20260913-3">
   <script src="assets/script.js" defer></script>
 </head>
 <body>
@@ -67,6 +67,23 @@
           Sharif University of Technology
         </figcaption>
       </figure>
+      <div class="hero-glance reveal" aria-label="At a glance">
+        <div class="glance-intro">
+          <span>At a glance</span>
+        </div>
+        <div class="glance-item">
+          <strong>Silver Medal</strong>
+          <span>International Physics Olympiad</span>
+        </div>
+        <div class="glance-item">
+          <strong>19.88/20</strong>
+          <span>GPA at Sharif University</span>
+        </div>
+        <div class="glance-item">
+          <strong>2</strong>
+          <span>Active research projects</span>
+        </div>
+      </div>
     </section>
 
     <section class="section shell" id="about">
@@ -131,19 +148,28 @@
         </div>
         <div class="timeline">
           <article class="timeline-item reveal">
-            <div class="timeline-date">Summer 2026</div>
+            <div class="timeline-meta">
+              <div class="timeline-date">Summer 2026</div>
+              <span class="experience-type">Research</span>
+            </div>
             <h3>Research Intern</h3>
             <p class="timeline-place"><a href="https://hkustsmartlab.github.io/" target="_blank" rel="noopener">SMARTX-Lab, HKUST</a> · Prof. Hao Chen</p>
             <p>Contributed to ConceptCLIP-V2 and developed an agentic AI system for medical education.</p>
           </article>
           <article class="timeline-item reveal">
-            <div class="timeline-date">2026 — Present</div>
+            <div class="timeline-meta">
+              <div class="timeline-date">2026 — Present</div>
+              <span class="experience-type">Research</span>
+            </div>
             <h3>Research Assistant</h3>
             <p class="timeline-place">Sharif University of Technology</p>
             <p>Developing a computationally efficient attention method designed to remain robust to local changes in object scale.</p>
           </article>
           <article class="timeline-item reveal">
-            <div class="timeline-date">2022 — Present</div>
+            <div class="timeline-meta">
+              <div class="timeline-date">2022 — Present</div>
+              <span class="experience-type">Teaching &amp; Service</span>
+            </div>
             <h3>Physics Olympiad Instructor</h3>
             <p class="timeline-place">Iran’s National Physics Team and leading schools</p>
             <p>Teaching advanced physics, preparing students for national- and international-level competitions, and contributing to the Experimental Committee of the 54th International Physics Olympiad.</p>
