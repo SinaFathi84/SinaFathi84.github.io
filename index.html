@@ -11,7 +11,7 @@
   <meta property="og:url" content="https://sinafathi84.github.io/">
   <meta property="og:image" content="https://sinafathi84.github.io/assets/sina-fathi-v4.jpg">
   <title>Sina Fathi — Research & Projects</title>
-  <link rel="icon" href="assets/favicon.svg?v=3" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.svg?v=4" type="image/svg+xml">
   <script>
     document.documentElement.classList.replace('no-js', 'js');
     try {
@@ -19,7 +19,7 @@
       document.documentElement.dataset.theme = savedTheme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
     } catch (_) {}
   </script>
-  <link rel="stylesheet" href="assets/styles.css?v=20260913-6">
+  <link rel="stylesheet" href="assets/styles.css?v=20260913-7">
   <script src="assets/script.js" defer></script>
 </head>
 <body>
@@ -28,11 +28,27 @@
   <header class="site-header" data-header>
     <div class="shell nav-wrap">
       <a class="brand" href="#top" aria-label="Sina Fathi, home">
-        <svg class="brand-mark" viewBox="0 0 60 40" role="img" aria-hidden="true">
-          <path class="brand-stroke" d="M6.5 9.5C11.5 4.5 25 4 27.2 11.7C29.5 19.7 11.2 19.9 10.3 29.4C9.5 38.5 23.6 42.1 34 34.4V7.2H53.8"/>
-          <path class="brand-stroke" d="M34 21.5H48.8"/>
-          <circle class="brand-dot" cx="54" cy="7.2" r="2.65"/>
-          <circle class="brand-node" cx="49" cy="21.5" r="2.25"/>
+        <svg class="brand-mark" viewBox="25 10 180 120" role="img" aria-hidden="true">
+          <g class="brand-network">
+            <path d="M57 24L112 29M57 24L112 69M57 24L112 111"/>
+            <path d="M57 61L112 29M57 61L112 69M57 61L112 111"/>
+            <path d="M57 110L112 29M57 110L112 69M57 110L112 111"/>
+            <path d="M112 29L181 29M112 29L165 69"/>
+            <path d="M112 69L181 29M112 69L165 69"/>
+            <path d="M112 111L181 29M112 111L165 69"/>
+          </g>
+          <path class="brand-letter" d="M82 29C76 23 67 21 57 24C45 27 39 35 41 44C43 53 49 57 57 61C65 65 80 67 82 78C84 88 78 97 68 103C63 106 60 108 57 110C49 115 40 111 35 105"/>
+          <path class="brand-letter" d="M112 111V29H181M112 69H165"/>
+          <g>
+            <circle class="brand-node-input" cx="57" cy="24" r="6"/>
+            <circle class="brand-node-input" cx="57" cy="61" r="6"/>
+            <circle class="brand-node-input" cx="57" cy="110" r="6"/>
+            <circle class="brand-node-hidden" cx="112" cy="29" r="6"/>
+            <circle class="brand-node-hidden" cx="112" cy="69" r="6"/>
+            <circle class="brand-node-hidden" cx="112" cy="111" r="6"/>
+            <circle class="brand-node-output" cx="181" cy="29" r="6"/>
+            <circle class="brand-node-output" cx="165" cy="69" r="6"/>
+          </g>
         </svg>
       </a>
       <nav class="desktop-nav" aria-label="Primary navigation">
