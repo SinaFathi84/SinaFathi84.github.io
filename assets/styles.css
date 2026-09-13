@@ -331,6 +331,7 @@ h1 {
 
 .honor-list { border-top: 1px solid var(--line); }
 .honor-row { padding: 22px 0; display: grid; grid-template-columns: 60px 1fr minmax(160px, .5fr); gap: 24px; align-items: center; border-bottom: 1px solid var(--line); }
+.honor-row-minimal { grid-template-columns: minmax(0, 1fr) minmax(200px, .55fr); }
 .honor-row span { color: var(--accent); font-size: .76rem; font-weight: 800; }
 .honor-row strong { font-family: Georgia, "Times New Roman", serif; font-size: 1.12rem; font-weight: 500; }
 .honor-row em { color: var(--muted); font-size: .8rem; font-style: normal; text-align: right; }
@@ -385,6 +386,8 @@ h1 {
   .project-card { min-height: 310px; padding: 27px; }
   .honor-row { grid-template-columns: 50px 1fr; gap: 12px; }
   .honor-row em { grid-column: 2; text-align: left; }
+  .honor-row-minimal { grid-template-columns: 1fr; }
+  .honor-row-minimal em { grid-column: auto; }
   .contact-section { padding: 85px 0; }
   .footer-inner { align-items: flex-start; flex-direction: column; }
   .footer-inner div { flex-wrap: wrap; }
