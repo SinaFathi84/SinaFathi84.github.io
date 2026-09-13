@@ -258,7 +258,7 @@ h1 {
 .portrait-accent {
   position: absolute;
   z-index: 1;
-  inset: -15px 24px 48px -15px;
+  inset: -15px 24px 24px -15px;
   border: 1px solid color-mix(in srgb, var(--accent) 24%, transparent);
   border-radius: var(--radius-lg);
 }
@@ -274,27 +274,6 @@ h1 {
   border-radius: var(--radius-lg);
   outline: 1px solid color-mix(in srgb, var(--surface) 70%, transparent);
   box-shadow: var(--shadow);
-}
-
-.portrait-wrap figcaption {
-  position: relative;
-  z-index: 3;
-  width: max-content;
-  max-width: calc(100% - 28px);
-  margin: -23px auto 0;
-  padding: 11px 17px;
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--surface) 88%, transparent);
-  box-shadow: 0 14px 34px rgba(38, 59, 48, .12);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  color: var(--muted);
-  font-size: .78rem;
-  font-weight: 650;
 }
 
 .hero-glance {
@@ -320,7 +299,9 @@ h1 {
 }
 
 .glance-intro {
-  padding-left: 0;
+  align-items: center;
+  padding-inline: 24px;
+  text-align: center;
   color: var(--accent);
   font-size: .72rem;
   font-weight: 800;
@@ -333,7 +314,7 @@ h1 {
   display: block;
   width: 36px;
   height: 1px;
-  margin-top: 10px;
+  margin: 10px auto 0;
   background: color-mix(in srgb, var(--accent) 50%, transparent);
 }
 
@@ -351,8 +332,6 @@ h1 {
   font-size: .7rem;
   line-height: 1.35;
 }
-
-.status-dot { width: 8px; height: 8px; border-radius: 50%; background: #26a870; box-shadow: 0 0 0 4px rgba(38,168,112,.12); }
 
 .section { position: relative; padding: 112px 0; border-top: 1px solid var(--line); }
 .section-label { margin-bottom: 62px; color: var(--muted); font-size: .77rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
@@ -529,7 +508,7 @@ h1 {
   .portrait-wrap { order: 1; width: min(100%, 440px); margin-inline: auto; }
   .hero-glance { order: 3; grid-template-columns: repeat(3, 1fr); }
   .glance-intro { grid-column: 1 / -1; min-height: auto; padding: 15px 0; border-bottom: 1px solid var(--line); }
-  .glance-intro span { display: flex; align-items: center; gap: 12px; }
+  .glance-intro span { width: 100%; display: flex; align-items: center; justify-content: center; gap: 12px; }
   .glance-intro span::after { display: inline-block; margin-top: 0; }
   .glance-intro + .glance-item { border-left: 0; }
   .featured-work:hover { padding-inline: 14px; }
