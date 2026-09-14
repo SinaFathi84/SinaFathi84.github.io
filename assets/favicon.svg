@@ -4,24 +4,24 @@
     <g fill="none" stroke="#a9d6b8" stroke-width="3" stroke-linecap="round" opacity=".48">
       <path d="M57 24L112 29M57 24L112 69M57 24L112 111"/>
       <path d="M57 61L112 29M57 61L112 69M57 61L112 111"/>
-      <path d="M57 110L112 29M57 110L112 69M57 110L112 111"/>
-      <path d="M112 29L181 29M112 29L165 69M112 69L181 29M112 69L165 69M112 111L181 29M112 111L165 69"/>
+      <path d="M57 109L112 29M57 109L112 69M57 109L112 111"/>
+      <path d="M112 29L181 29M112 29L181 69M112 69L181 29M112 69L181 69M112 111L181 29M112 111L181 69"/>
     </g>
     <g fill="none" stroke="#fffdf8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M82 29C76 23 67 21 57 24C45 27 39 35 41 44C43 53 49 57 57 61C65 65 80 67 82 78C84 88 78 97 68 103C63 106 60 108 57 110C49 115 40 111 35 105"/>
-      <path d="M112 111V29H181M112 69H165"/>
+      <path d="M83 29C77 22 67 20 57 24C47 28 39 35 41 45C43 54 49 58 57 61C65 64 80 69 82 79C84 90 75 101 57 109C48 113 40 109 35 102"/>
+      <path d="M112 111V29H181M112 69H181"/>
     </g>
     <g stroke="#a9d6b8" stroke-width="4">
       <circle cx="57" cy="24" r="6" fill="#2f5a45"/>
       <circle cx="57" cy="61" r="6" fill="#2f5a45"/>
-      <circle cx="57" cy="110" r="6" fill="#2f5a45"/>
+      <circle cx="57" cy="109" r="6" fill="#2f5a45"/>
       <circle cx="112" cy="29" r="6" fill="#6f9c7c"/>
       <circle cx="112" cy="69" r="6" fill="#6f9c7c"/>
       <circle cx="112" cy="111" r="6" fill="#6f9c7c"/>
     </g>
     <g fill="#a9d6b8" stroke="#2f5a45" stroke-width="3">
       <circle cx="181" cy="29" r="6"/>
-      <circle cx="165" cy="69" r="6"/>
+      <circle cx="181" cy="69" r="6"/>
     </g>
   </g>
 </svg>
